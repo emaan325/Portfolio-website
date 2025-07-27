@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <style>
+        body {
+    overflow-y: auto;
+    height: 100vh;
+    /* Optional: style the scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(109,67,0) #fffbe6;
+}
+
+/* For Chrome, Edge, Safari */
+body::-webkit-scrollbar {
+    width: 8px;
+    background: #fffbe6;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgb(109,67,0);
+    border-radius: 8px;
+}
+     </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Emaan Azhar</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="projects.html">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="services.html">Services</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+        <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+    </div>
+        </div>
+    </nav>
+        <section>
+    <h1 style="text-align:center; color:rgb(109,67,0); margin: 2.625rem 0 2rem 0;" data-aos="fade-down" data-aos-duration="1000">Services</h1>
+    <div class="services-grid" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; max-width: 1000px; margin: 0 auto;">
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">UI/UX Designer</h2>
+            <p style="margin-bottom: 2.5rem;">Designing intuitive and engaging user experiences for web and mobile platforms.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Graphic Designer</h2>
+            <p style="margin-bottom: 2.5rem;">Creating visually appealing graphics and branding materials using modern design tools.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Frontend Developer</h2>
+            <p style="margin-bottom: 2.5rem;">Building responsive and interactive websites using HTML, CSS, and JavaScript.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Backend Developer</h2>
+            <p style="margin-bottom: 2.5rem;">Developing secure and scalable server-side applications and APIs.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">WordPress Website Developer</h2>
+            <p style="margin-bottom: 2.5rem;">Creating custom and dynamic WordPress websites for businesses and individuals.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Full Stack Developer</h2>
+            <p style="margin-bottom: 2.5rem;">Delivering complete web solutions from frontend to backend for robust applications.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Data Analyst</h2>
+            <p style="margin-bottom: 2.5rem;">Analyzing and visualizing data to provide actionable business insights.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Programmer (C++, Java, Python)</h2>
+            <p style="margin-bottom: 2.5rem;">Writing efficient code and building applications in C++, Java, and Python.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+        <div class="service-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800" style="flex: 1 1 250px; min-width: 250px; max-width: 300px; background: rgba(255,255,255,0.85); box-shadow: 0 4px 24px rgba(109,67,0,0.10); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; position: relative; margin-bottom: 1rem; transition: transform 0.3s, box-shadow 0.3s;">
+            <h2 style="color:rgb(109,67,0); font-size:1.1rem;">Mobile App Developer</h2>
+            <p style="margin-bottom: 2.5rem;">Developing user-friendly mobile applications for Android platforms.</p>
+            <button style="position: absolute; right: 1.5rem; bottom: 1.5rem; background: rgb(109,67,0); color: #fff; border: none; border-radius: 6px; padding: 0.5rem 1.2rem; cursor: pointer;">Hire Now</button>
+        </div>
+    </div>
+</section>
+<script>
+    // Inline hover animation for service cards
+    document.querySelectorAll('.service-card').forEach(function(card){
+        card.onmouseenter = function(){
+            card.style.transform = 'scale(1.07)';
+            card.style.boxShadow = '0 8px 32px rgba(109,67,0,0.28)';
+            card.style.zIndex = '2';
+        };
+        card.onmouseleave = function(){
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = '0 4px 24px rgba(109,67,0,0.10)';
+            card.style.zIndex = '1';
+        };
+        // Redirect on Hire Now button click
+        var btn = card.querySelector('button');
+        if(btn){
+            btn.onclick = function(){
+                window.location.href = 'contact.html';
+            };
+        }
+    });
+</script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+</body>
+</html>
